@@ -1,0 +1,121 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(45deg, #3f51b5, #2196f3);
+    color: white;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background: linear-gradient(45deg, #1e1e1e, #121212);
+    color: white;
+}
+
+body.dark-mode .calculator {
+    background: #2b2b2b;
+    color: white;
+}
+
+body.dark-mode .display {
+    background: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode button {
+    background: #3a3a3a;
+    color: white;
+}
+
+body.dark-mode button:hover {
+    background: #575757;
+}
+
+body.dark-mode button:nth-child(4n) {
+    background: #ff9800;
+}
+
+body.dark-mode button:nth-child(4n):hover {
+    background: #cc8400;
+}
+
+/* Calculator container */
+.calculator {
+    width: 320px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Display screen */
+.display {
+    height: 80px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px;
+    font-size: 2rem;
+    color: #333;
+    overflow: hidden;
+}
+
+/* Buttons grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Button styles */
+button {
+    height: 60px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #3f51b5;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #303f9f;
+}
+
+button:nth-child(4n) {
+    background: #ff9800;
+}
+
+button:nth-child(4n):hover {
+    background: #cc8400;
+}
+
+/* Dark mode toggle button */
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.theme-toggle button {
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #3f51b5;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.theme-toggle button:hover {
+    background: #303f9f;
+}
